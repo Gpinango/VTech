@@ -9,9 +9,10 @@
         class="navbar-brand"
         [routerLink]="['/home']"
         placement="bottom"
-        tooltip="Designed and Coded by Creative Tim"
+        tooltip=""
       >
-        <span> Vision Technologies• </span> Design System Angular
+        <span>Vision Technologies•</span>
+        Design System Angular
       </a>
       <button
         aria-controls="navigation-index"
@@ -22,9 +23,9 @@
         id="navigation"
         type="button"
       >
-        <span class="navbar-toggler-bar bar1"> </span>
-        <span class="navbar-toggler-bar bar2"> </span>
-        <span class="navbar-toggler-bar bar3"> </span>
+        <span class="navbar-toggler-bar bar1"></span>
+        <span class="navbar-toggler-bar bar2"></span>
+        <span class="navbar-toggler-bar bar3"></span>
       </button>
     </div>
     <div
@@ -34,7 +35,7 @@
     >
       <div class="navbar-collapse-header">
         <div class="row">
-          <div class="col-6 collapse-brand"><a> Vision Technologies• </a></div>
+          <div class="col-6 collapse-brand"><a>Vision Technologies•</a></div>
           <div class="col-6 collapse-close text-right">
             <button
               aria-controls="navigation-index"
@@ -45,7 +46,7 @@
               id="navigation"
               type="button"
             >
-              <i class="tim-icons icon-simple-remove"> </i>
+              <i class="tim-icons icon-simple-remove"></i>
             </button>
           </div>
         </div>
@@ -54,48 +55,37 @@
         <li class="nav-item p-0">
           <a
             class="nav-link"
-            href="https://twitter.com/CreativeTim"
+            href=""
             placement="bottom"
             target="_blank"
-            tooltip="Follow us on Twitter"
+            tooltip="Join our Channel"
           >
-            <i class="fab fa-twitter"> </i>
-            <p class="d-lg-none d-xl-none">Twitter</p>
+            <i class="fab fa-telegram"></i>
+            <p class="d-lg-none d-xl-none">Telegram</p>
           </a>
         </li>
         <li class="nav-item p-0">
           <a
             class="nav-link"
-            href="https://www.facebook.com/CreativeTim"
+            href=""
             placement="bottom"
             target="_blank"
             tooltip="Like us on Facebook"
           >
-            <i class="fab fa-facebook-square"> </i>
+            <i class="fab fa-facebook-square"></i>
             <p class="d-lg-none d-xl-none">Facebook</p>
           </a>
         </li>
         <li class="nav-item p-0">
           <a
             class="nav-link"
-            href="https://www.instagram.com/CreativeTimOfficial"
+            href=""
             placement="bottom"
             target="_blank"
             tooltip="Follow us on Instagram"
           >
-            <i class="fab fa-instagram"> </i>
+            <i class="fab fa-instagram"></i>
             <p class="d-lg-none d-xl-none">Instagram</p>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" [routerLink]="['/home']"> Back to Kit </a>
-        </li>
-        <li class="nav-item">
-          <a
-            class="nav-link"
-            href="https://github.com/creativetimofficial/blk-design-system-angular/issues"
-          >
-            Have an issue?
           </a>
         </li>
       </ul>
@@ -104,141 +94,183 @@
 </nav>
 <div class="wrapper">
   <div class="page-header">
-    <div class="page-header-image"></div>
+    <img
+      style="
+        width: -webkit-fill-available;
+        position: absolute;
+        overflow: hidden;
+      "
+      src="assets/img/consultation.gif"
+      alt=""
+    />
     <div class="content">
       <div class="container">
         <div class="row">
-          <div class="col-lg-5 col-md-6 offset-lg-0 offset-md-3">
-            <div class="square square-7" id="square7"></div>
-            <div class="square square-8" id="square8"></div>
-            <div class="card card-register">
-              <div class="card-header">
-                <img
-                  alt="Card image"
-                  class="card-img"
-                  src="assets/img/square1-red.png"
-                />
+          <div class="card card-register">
+            <div class="card-header">
+              <img
+                alt="Card image"
+                class="card-img"
+                src="assets/img/square1.png"
+              />
 
-                <h4 class="card-title">Register</h4>
-              </div>
-              <div class="card-body">
-                <form class="form">
-                  <div
-                    class="input-group"
-                    [ngClass]="{ 'input-group-focus': focus === true }"
-                  >
-                    <div class="input-group-prepend">
-                      <div class="input-group-text">
-                        <i class="tim-icons icon-single-02"> </i>
-                      </div>
-                    </div>
-                    <input
-                      class="form-control"
-                      placeholder="Full Name"
-                      type="text"
-                      (focus)="focus = true"
-                      (blur)="focus = false"
-                    />
-                  </div>
-                  <div
-                    class="input-group"
-                    [ngClass]="{ 'input-group-focus': focus1 === true }"
-                  >
-                    <div class="input-group-prepend">
-                      <div class="input-group-text">
-                        <i class="tim-icons icon-email-85"> </i>
-                      </div>
-                    </div>
-                    <input
-                      class="form-control"
-                      placeholder="Email"
-                      type="text"
-                      (focus)="focus1 = true"
-                      (blur)="focus1 = false"
-                    />
-                  </div>
-                  <div
-                    class="input-group"
-                    [ngClass]="{ 'input-group-focus': focus2 === true }"
-                  >
-                    <div class="input-group-prepend">
-                      <div class="input-group-text">
-                        <i class="tim-icons icon-lock-circle"> </i>
-                      </div>
-                    </div>
-                    <input
-                      class="form-control"
-                      placeholder="Password"
-                      type="text"
-                      (focus)="focus2 = true"
-                      (blur)="focus2 = false"
-                    />
-                  </div>
-                  <div class="form-check text-left">
-                    <label class="form-check-label">
-                      <input class="form-check-input" type="checkbox" />
-
-                      <span class="form-check-sign"> </span> I agree to the
-                      <a href="javascript:void(0)"> terms and conditions </a> .
-                    </label>
-                  </div>
-                </form>
-              </div>
-              <div class="card-footer">
-                <a
-                  class="btn btn-danger btn-round btn-lg"
-                  href="javascript:void(0)"
+              <h4 class="card-title" style="color: white;">
+                Book a Free Consultation
+              </h4>
+            </div>
+            <h3>
+              <p class="text-warning">
+                Here are a few questions we would like to ask you prior to our
+                free consultation:
+              </p>
+            </h3>
+            <div class="card-body">
+              <form class="form">
+                <div
+                  class="input-group"
+                  [ngClass]="{ 'input-group-focus': focus === true }"
                 >
-                  Get Started
-                </a>
-              </div>
+                  <div class="input-group-prepend">
+                    <div class="input-group-text">
+                      <i class="tim-icons icon-sound-wave text-success"></i>
+                    </div>
+                  </div>
+                  <input
+                    class="form-control"
+                    placeholder="What type of business do you own/manage ?"
+                    type="text"
+                    (focus)="focus = true"
+                    (blur)="focus = false"
+                  />
+                </div>
+                <div
+                  class="input-group"
+                  [ngClass]="{ 'input-group-focus': focus1 === true }"
+                >
+                  <div class="input-group-prepend">
+                    <div class="input-group-text">
+                      <i class="tim-icons icon-sound-wave text-success"></i>
+                    </div>
+                  </div>
+                  <input
+                    class="form-control"
+                    placeholder="What type of services are you looking to get ?"
+                    type="text"
+                    (focus)="focus1 = true"
+                    (blur)="focus1 = false"
+                  />
+                </div>
+                <div
+                  class="input-group"
+                  [ngClass]="{ 'input-group-focus': focus2 === true }"
+                >
+                  <div class="input-group-prepend">
+                    <div class="input-group-text">
+                      <i class="tim-icons icon-sound-wave text-success"></i>
+                    </div>
+                  </div>
+                  <input
+                    class="form-control"
+                    placeholder="Do you have a planned strategy for what you’re asking for or require assistance developing a marketing strategy plan ? 
+                      "
+                    type="text"
+                    (focus)="focus2 = true"
+                    (blur)="focus2 = false"
+                  />
+                </div>
+                <div
+                  class="input-group"
+                  [ngClass]="{ 'input-group-focus': focus3 === true }"
+                >
+                  <div class="input-group-prepend">
+                    <div class="input-group-text">
+                      <i class="tim-icons icon-sound-wave text-success"></i>
+                    </div>
+                  </div>
+                  <input
+                    class="form-control"
+                    placeholder="What is your business’s name ?"
+                    type="text"
+                    (focus)="focus3 = true"
+                    (blur)="focus3 = false"
+                  />
+                </div>
+                <div
+                  class="input-group"
+                  [ngClass]="{ 'input-group-focus': focus4 === true }"
+                >
+                  <div class="input-group-prepend">
+                    <div class="input-group-text">
+                      <i class="tim-icons icon-sound-wave text-success"></i>
+                    </div>
+                  </div>
+                  <input
+                    class="form-control"
+                    placeholder="What role do you hold in the business ?"
+                    type="text"
+                    (focus)="focus4 = true"
+                    (blur)="focus4 = false"
+                  />
+                </div>
+              </form>
+            </div>
+            <div class="card-footer">
+              <a
+                style="display: block;"
+                class="btn btn-info btn-round btn-lg"
+                href="javascript:void(0)"
+              >
+                Generate Consultation
+              </a>
             </div>
           </div>
         </div>
-        <div class="register-bg"></div>
-        <div class="square square-1" id="square1"></div>
-        <div class="square square-2" id="square2"></div>
-        <div class="square square-3" id="square3"></div>
-        <div class="square square-4" id="square4"></div>
-        <div class="square square-5" id="square5"></div>
-        <div class="square square-6" id="square6"></div>
       </div>
     </div>
   </div>
-  <footer class="footer">
+  <!-- <footer class="footer">
     <div class="container">
       <div class="row">
         <div class="col-md-3"><h1 class="title">Vision Technologies•</h1></div>
         <div class="col-md-3">
           <ul class="nav">
             <li class="nav-item">
-              <a class="nav-link" [routerLink]="['/home']"> Home </a>
+              <a class="nav-link" [routerLink]="['/home']">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" [routerLink]="['/landing']"> Landing </a>
+              <a class="nav-link" [routerLink]="['/landing']">Landing</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" [routerLink]="['/register']"> Register </a>
+              <a class="nav-link" [routerLink]="['/register']">Register</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" [routerLink]="['/profile']"> Profile </a>
+              <a class="nav-link" [routerLink]="['/profile']">Profile</a>
             </li>
           </ul>
         </div>
         <div class="col-md-3">
           <ul class="nav">
             <li class="nav-item">
-              <a class="nav-link" href="https://creative-tim.com/contact-us?ref=blkdsa-footer">
+              <a
+                class="nav-link"
+                href="https://creative-tim.com/contact-us?ref=blkdsa-footer"
+              >
                 Contact Us
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="https://creative-tim.com/about-us?ref=blkdsa-footer">
+              <a
+                class="nav-link"
+                href="https://creative-tim.com/about-us?ref=blkdsa-footer"
+              >
                 About Us
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="https://creative-tim.com/blog?ref=blkdsa-footer">
+              <a
+                class="nav-link"
+                href="https://creative-tim.com/blog?ref=blkdsa-footer"
+              >
                 Blog
               </a>
             </li>
@@ -257,25 +289,25 @@
               href="https://twitter.com/creativetim"
               target="_blank"
             >
-              <i class="fab fa-twitter"> </i>
+              <i class="fab fa-twitter"></i>
             </a>
             <a
               class="btn btn-icon btn-neutral btn-round btn-simple mr-1"
               href="https://www.facebook.com/creativetim"
               target="_blank"
             >
-              <i class="fab fa-facebook-square"> </i>
+              <i class="fab fa-facebook-square"></i>
             </a>
             <a
               class="btn btn-icon btn-neutral btn-round btn-simple"
               href="https://dribbble.com/creativetim"
               target="_blank"
             >
-              <i class="fab fa-dribbble"> </i>
+              <i class="fab fa-dribbble"></i>
             </a>
           </div>
         </div>
       </div>
     </div>
-  </footer>
+  </footer> -->
 </div>
