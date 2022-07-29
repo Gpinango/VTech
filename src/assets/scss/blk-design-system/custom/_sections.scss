@@ -2,7 +2,7 @@
   padding: 70px 0;
   position: relative;
 
-  .row + .category {
+  .row+.category {
     margin-top: $margin-base-vertical;
   }
 
@@ -36,6 +36,7 @@
 .section-navbars {
   padding-bottom: 0;
   overflow: hidden;
+
   .navbar {
     z-index: 2;
   }
@@ -47,6 +48,7 @@
 
 .section-typo {
   overflow: hidden;
+
   .path {
     right: -400px;
   }
@@ -74,6 +76,7 @@
 
 .section-javascript {
   overflow: hidden;
+
   .path {
     right: -300px;
     width: 80%;
@@ -89,6 +92,7 @@
 .section-full-screen {
   height: 100vh;
 }
+
 .section-signup {
   padding-top: 20vh;
   overflow: hidden;
@@ -96,6 +100,7 @@
   .square {
     background-size: cover;
   }
+
   .square-1 {
     height: 300px;
     width: 300px;
@@ -170,14 +175,17 @@
   .card-pricing.card-plain ul li {
     color: $white;
   }
+
   .description,
   .info .icon:not(.icon-circle) {
     color: $opacity-8;
   }
+
   .card:not(.card-plain) {
     .info-title {
       color: $black;
     }
+
     .info p,
     .info .icon,
     .description {
@@ -188,11 +196,14 @@
   .footer {
     color: $white;
   }
+
   .card-plain {
+
     [class*="text-"],
     ul li b {
       color: $white;
     }
+
     .category {
       color: rgba($white, 0.5);
     }
@@ -233,7 +244,7 @@
     z-index: -1;
   }
 
-  & > .content {
+  &>.content {
     margin-top: 11%;
     text-align: center;
     margin-bottom: 50px;
@@ -241,6 +252,10 @@
 
   .signup-page & {
     max-height: fit-content;
+  }
+
+  .fade-in-image {
+    animation: fadeIn 5s;
   }
 
   .content-center {
@@ -254,12 +269,12 @@
     text-align: center;
     color: $white;
     padding: 0 15px;
-    width: 100%;
+    // width: 100%;
     max-width: 880px;
 
-    &.brand {
-      width: 47%;
-    }
+    // &.brand {
+    //   width: 47%;
+    // }
   }
 
   footer {
@@ -291,7 +306,8 @@
   .title {
     margin-bottom: 15px;
   }
-  .title + h4 {
+
+  .title+h4 {
     margin-top: 10px;
   }
 
@@ -301,6 +317,7 @@
 }
 
 .clear-filter {
+
   &:after,
   &:before {
     display: none;
@@ -309,6 +326,7 @@
 
 .section-basic {
   overflow: hidden;
+
   .category {
     margin-bottom: 10px;
   }
@@ -329,14 +347,14 @@
     box-shadow: $box-shadow-raised;
     border-radius: 0.25rem;
 
-    & + .category {
+    &+.category {
       padding-top: 15px;
     }
 
     &.image-right {
       z-index: 2;
 
-      + h3.title {
+      +h3.title {
         margin-top: 120px;
       }
     }
@@ -400,6 +418,7 @@
     max-width: 100%;
     height: 360px;
     margin: 0 auto;
+
     i {
       position: absolute;
       display: inline-flex;
@@ -534,6 +553,7 @@
 
 .section-download {
   overflow: hidden;
+
   .path {
     right: -400px;
   }
@@ -561,6 +581,7 @@
     transition: $transition-base;
     z-index: 100;
   }
+
   &:hover {
     .blur-item {
       opacity: 0.8;
@@ -568,6 +589,7 @@
       transform: scale(0.95);
       z-index: 1;
     }
+
     .blur-hidden {
       opacity: 1;
       top: 50%;
@@ -612,8 +634,9 @@
   }
 
   .footer {
+
     &.footer-white .footer-brand,
-    &.footer-white ul li > a.nav-link:not(.btn-icon) {
+    &.footer-white ul li>a.nav-link:not(.btn-icon) {
       color: initial;
     }
   }
@@ -681,7 +704,7 @@
   .card-category,
   .author span,
   .card-pricing.card-plain ul li i {
-    color: $opacity-8 !important;
+    color: $opacity-8  !important;
   }
 
   .separator {
@@ -715,26 +738,24 @@
     color: $white;
   }
 
-  .checkbox input[type="checkbox"]:disabled + label,
-  .radio input[type="radio"]:disabled + label {
+  .checkbox input[type="checkbox"]:disabled+label,
+  .radio input[type="radio"]:disabled+label {
     color: $white;
   }
 
-  .radio input[type="radio"]:not(:disabled):hover + label::after,
-  .radio input[type="radio"]:checked + label::after {
+  .radio input[type="radio"]:not(:disabled):hover+label::after,
+  .radio input[type="radio"]:checked+label::after {
     background-color: $white;
     border-color: $white;
   }
 
   //inputs
-  @include input-coloured-bg(
-    $opacity-5,
+  @include input-coloured-bg($opacity-5,
     $white,
     $white,
     $transparent-bg,
     $opacity-1,
-    $opacity-2
-  );
+    $opacity-2 );
 
   .input-group-text,
   .form-group.form-group-no-border .input-group-text,
@@ -778,8 +799,8 @@
 
   //tabs
   .nav-tabs {
-    > .nav-item {
-      > .nav-link {
+    >.nav-item {
+      >.nav-link {
         i.now-ui-icons {
           color: $white;
         }
@@ -801,20 +822,23 @@
   padding: 80px 0;
 }
 
-@media screen and (min-width: 991px) {
+@media screen and (min-width: 768px) {
   .section-safe {
     .card.card-stats {
       position: absolute;
+
       &:nth-of-type(1) {
         width: 140px;
         top: -55px;
         left: 200px;
       }
+
       &:nth-of-type(2) {
         width: 200px;
         top: 150px;
         left: -81px;
       }
+
       &:nth-of-type(3) {
         width: 130px;
         top: 240px;
@@ -828,7 +852,7 @@
   }
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 768px) {
   .section-signup {
     .card-register {
       margin-top: 50px;
@@ -851,6 +875,7 @@
     margin-top: 210px;
   }
 }
+
 @media screen and (max-width: 768px) {
   .section-safe {
     .card.card-stats {
@@ -1007,8 +1032,8 @@
   background: #97a0af;
 }
 
-.bd-example .row > .col span,
-.bd-example .row > [class^="col-"] span {
+.bd-example .row>.col span,
+.bd-example .row>[class^="col-"] span {
   font-size: $font-size-sm;
   display: block;
   margin: 1rem 0;

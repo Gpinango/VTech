@@ -11,7 +11,7 @@
         placement="bottom"
         tooltip=""
       >
-        <span>Vision Technologies•</span>
+        <span>FlexTech Vision•</span>
         Designed by Professionals
       </a>
       <button
@@ -35,7 +35,7 @@
     >
       <div class="navbar-collapse-header">
         <div class="row">
-          <div class="col-6 collapse-brand"><a>Vision Technologies•</a></div>
+          <div class="col-6 collapse-brand"><a>FlexTech Vision•</a></div>
           <div class="col-6 collapse-close text-right">
             <button
               aria-controls="navigation-index"
@@ -96,23 +96,46 @@
 <div class="wrapper">
   <div class="page-header">
     <div>
-      <img class="squareC" src="assets/img/welcome.gif" />
+      <video
+        style="height: -webkit-fill-available; overflow: hidden; display: flex;"
+        autoplay
+        muted
+        loop
+      >
+        <source src="assets/img/Tech3.mp4" type="video/mp4" />
+      </video>
     </div>
     <div class="container">
-      <div class="content-center brand">
-        <h1 class="h1-seo">Vision Technologies</h1>
+      <div
+        class="content-center brand"
+        style="
+          max-width: 449px;
+          text-shadow: 2px 2px 0 #000, 2px 2px 0 #000, 2px 2px 0 #000,
+            2px 2px 0 #000;
+        "
+      >
+        <h1 class="h1-seo">
+          FlexTech
+          <span class="text-info">Vision</span>
+        </h1>
         <h3>
           A provider you can trust to support you in the digital era.
         </h3>
-        <div style="display: inline-flex;">
+        <div style="display: flex;">
           <button class="btn btn-primary mr-1" [routerLink]="['/profile']">
-            Services
+            <span style="margin-left: -10px;">
+              Services
+            </span>
           </button>
           <button class="btn btn-primary mr-1" [routerLink]="['/register']">
-            Consultation
+            <span style="margin-left: -10px;">
+              Consultation
+            </span>
           </button>
           <button class="btn btn-primary mr-1" [routerLink]="['/landing']">
-            About Us
+            <span style="margin-left: -10px;">
+              About Us
+            </span>
           </button>
         </div>
       </div>

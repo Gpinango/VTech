@@ -286,13 +286,19 @@
   padding: 0;
 }
 
-@media screen and (min-width: 991px) {
+@media screen and (min-width: 768px) {
+  #container {
+    width: 90%;
+  }
+  #content {
+    width: 60%;
+  }
   .lightbox .modal-dialog {
     width: 960px;
   }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 768px) {
   .fixed-section.affix {
     position: relative;
     margin-bottom: 100px;
@@ -489,7 +495,7 @@
   padding-bottom: 0;
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 768px) {
   .section-navbars .navbar-collapse {
     display: none !important;
   }

@@ -6,7 +6,7 @@
   <div class="container">
     <div class="navbar-translate">
       <a class="navbar-brand" [routerLink]="['/home']" placement="bottom">
-        <span>Vision Technologies•</span>
+        <span>FlexTech Vision•</span>
         Designed by Professionals
       </a>
       <button
@@ -92,41 +92,44 @@
   <div class="page-header">
     <img class="path" src="assets/img/blob.png" />
 
-    <img class="shapes circle" src="assets/img/cercuri.png" />
-
-    <div class="content-center">
-      <div class="content brand">
-        <h1
-          class="h1-seo"
-          style="font-weight: 600; text-transform: capitalize;"
-        >
-          ABOUT US
-        </h1>
-      </div>
-      <div
-        class="row row-grid justify-content-between align-items-center text-left"
-      >
-        <div class="col-lg-6 col-md-6">
-          <h1 class="text-white">
-            Our Goal
-            <br />
-          </h1>
-          <p class="text-white mb-3">
-            Our goal as an organization is to assist businesses excel into a new
-            era of digital marketing. Supporting local businesses in our
-            communities is a priority for us and society as a whole in ensuring
-            a healthy economy for our future.
-          </p>
-        </div>
-        <div class="col-lg-4 col-md-5">
-          <img
-            alt="Circle image"
-            class="img-fluid"
-            src="assets/img/storephone.png"
-          />
-        </div>
-      </div>
+    <div class="content brand">
+      <h1 class="h1-seo" style="font-weight: 600; text-transform: capitalize;">
+        ABOUT
+        <span class="text-info">US</span>
+      </h1>
     </div>
+    <section class="section section-lg">
+      <section class="section">
+        <div class="container">
+          <div class="row row-grid justify-content-between">
+            <div class="col-md-6" style="margin-top: 2.5cm;">
+              <div class="pl-md-5">
+                <h1>
+                  Our Goal
+                  <br />
+                </h1>
+                <p>
+                  Our goal as an organization is to assist businesses excel into
+                  a new era of digital marketing. Supporting local businesses in
+                  our communities is a priority for us and society as a whole in
+                  ensuring a healthy economy for our future.
+                </p>
+                <br />
+                <br />
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-5">
+              <img
+                alt="Circle image"
+                class="img-fluid"
+                src="assets/img/storephone.png"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
   </div>
 
   <section class="section section-lg">
@@ -249,24 +252,27 @@
     </section>
   </section>
 
-  <div class="wrapper">
-    <div class="page-header">
-      <div class="content-center">
-        <div
-          class="row row-grid justify-content-between align-items-center text-left"
-        >
-          <div class="col-lg-6 col-md-6">
-            <h1 class="text-white">
-              Our Team
+  <section class="section section-lg">
+    <section class="section">
+      <div class="container">
+        <div class="row row-grid justify-content-between">
+          <div class="col-md-6" style="margin-top: 2.5cm;">
+            <div class="pl-md-5">
+              <h1>
+                Our Team
+                <br />
+              </h1>
+              <p>
+                We are the ultimate package. Consisting of senior web & app
+                developers, marketing specialists, marketing designers, & sales
+                strategists, we will be the backbone in your online success.
+              </p>
               <br />
-            </h1>
-            <p class="text-white mb-3">
-              We are the ultimate package. Consisting of senior web & app
-              developers, marketing specialists, marketing designers, & sales
-              strategists, we will be the backbone in your online success.
-            </p>
+              <br />
+            </div>
           </div>
-          <div class="">
+
+          <div class="col-lg-4 col-md-5">
             <img
               alt="Circle image"
               class="img-fluid"
@@ -275,89 +281,6 @@
           </div>
         </div>
       </div>
-    </div>
-
-    <!-- <footer class="footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-3"><h1 class="title">BLK•</h1></div>
-        <div class="col-md-3">
-          <ul class="nav">
-            <li class="nav-item">
-              <a class="nav-link" [routerLink]="['/home']">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" [routerLink]="['/landing']">Landing</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" [routerLink]="['/register']">Register</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" [routerLink]="['/profile']">Profile</a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-md-3">
-          <ul class="nav">
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                href="https://creative-tim.com/contact-us?ref=blkdsa-footer"
-              >
-                Contact Us
-              </a>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                href="https://creative-tim.com/about-us?ref=blkdsa-footer"
-              >
-                About Us
-              </a>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                href="https://creative-tim.com/blog?ref=blkdsa-footer"
-              >
-                Blog
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://opensource.org/licenses/MIT">
-                License
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-md-3">
-          <h3 class="title">Follow us:</h3>
-          <div class="btn-wrapper profile">
-            <a
-              class="btn btn-icon btn-neutral btn-round btn-simple mr-1"
-              href="https://twitter.com/creativetim"
-              target="_blank"
-            >
-              <i class="fab fa-twitter"></i>
-            </a>
-            <a
-              class="btn btn-icon btn-neutral btn-round btn-simple mr-1"
-              href="https://www.facebook.com/creativetim"
-              target="_blank"
-            >
-              <i class="fab fa-facebook-square"></i>
-            </a>
-            <a
-              class="btn btn-icon btn-neutral btn-round btn-simple"
-              href="https://dribbble.com/creativetim"
-              target="_blank"
-            >
-              <i class="fab fa-dribbble"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer> -->
-  </div>
+    </section>
+  </section>
 </div>

@@ -347,7 +347,7 @@
   border-radius: $border-radius-lg;
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 768px) {
   .dropdown-toggle:after {
     display: inline-block;
     width: 0;
@@ -362,7 +362,7 @@
   }
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
   .dropdown-menu .dropdown-item {
     color: $dark-gray;
   }
