@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/creativetimofficial/blk-design-system-angular.git"
+    "url": "git+https://github.com/Gpinango/VTech"
   },
   "keywords": [
     "design system",
@@ -35,8 +35,6 @@
     "black kit",
     "blk ui kit",
     "blk angular ui kit",
-    "creative tim",
-    "creative tim angular",
     "html kit",
     "angular kit",
     "html css template",
@@ -56,12 +54,12 @@
     "blk design system",
     "blk design system angular"
   ],
-  "author": "Creative Tim <hello@creative-tim.com> (https://www.creative-tim.com/)",
+  "author": "FlexWave",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/creativetimofficial/blk-design-system-angular/issues"
+    "url": ""
   },
-  "homepage": "https://demos.creative-tim.com/blk-design-system-angular/",
+  "homepage": "",
   "private": false,
   "dependencies": {
     "@angular/animations": "11.0.5",
